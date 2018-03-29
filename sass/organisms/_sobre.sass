@@ -1,75 +1,78 @@
 section.sobre 
-		.itens
-				+flexbox
-				+align-items(center)
-				+justify-content(space-around)
-				text-align: center
-				margin: 50px auto
-				+make-sm-column(10)
-				+make-sm-column-offset(1)
+	.itens
+
+		+flexbox
+		+align-items(center)
+		+justify-content(space-around)
+		text-align: center
+		margin: 50px auto
+		+make-sm-column(10)
+		+make-sm-column-offset(1)
+		+breakpoint($tablet)
+			display: block
+			+make-sm-column(12)
+			margin-left: auto
+			margin-right: auto
+			margin-top: 30px
+
+	.hero-img
+		+order(3)
+		+breakpoint($tablet)
+			display: block
+			margin: 20px auto 30px auto
+					
+		img
+			+breakpoint($tablet)
 				
-				+breakpoint($tablet)
-						display: block
-						+make-sm-column(12)
-						margin-left: auto
-						margin-right: auto
-						margin-top: 30px
-
-				.hero-img
-						+order(3)
-						+breakpoint($tablet)
-								display: block
-								margin: 20px auto 30px auto
-								
-						img
-								+breakpoint($tablet)
-										width: 180px
-										heigth: 180px
+				width: 180px
+				heigth: 180px
 						
-						+breakpoint($celular)
-								margin-left: auto
-								margin-right: auto
-				[class^="icone-"]
-						width: 90px
-						height: 90px
-						background-color: $azul-claro
-						+border-radius(120px)
-						text-align: center
-						line-height: 90px
-						color: $branco
-						+font-size(55px)
-						+breakpoint($tablet)
-								display: inline-block
-								width: 75px
-								height: 75px
-								line-height: 75px
-								+font-size(50px)
-								margin: 0 3px
-						+breakpoint($celular)
-								display: inline-block
-								width: 55px
-								height: 55px
-								line-height: 55px
-								+font-size(45px)
-								margin: 0 3px
-						&.icone-lapis
-								+order(1)
-						&.icone-codigo
-								+order(2)
-						&.icone-coracao
-								+order(4)
-						&.icone-compartilhar
-								+order(5)
-		
+			+breakpoint($celular)
+				margin-left: auto
+				margin-right: auto
+	[class^="icone-"]
+		border			
+		width: 90px
+		height: 90px
+		background-color: $azul-claro
+		+border-radius(120px)
+		text-align: center
+		line-height: 90px
+		color: $branco
+		+font-size(55px)
+		+breakpoint($tablet)
+			display: inline-block
+			width: 75px
+			height: 75px
+			line-height: 75px
+			+font-size(50px)
+			margin: 0 3px
+		+breakpoint($celular)
+			display: inline-block
+			width: 55px
+			height: 55px
+			line-height: 55px
+			+font-size(45px)
+			margin: 0 3px
+		&.icone-lapis
+			+order(1)
+		&.icone-codigo
+			+order(2)
+		&.icone-coracao
+			+order(4)
+		&.icone-compartilhar
+			+order(5)	
+	.textos
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+		text-align: center
+		margin-top: 50px
+		clear: both
+		+font-size(30px)
+		+breakpoint($celular)
+			+make-sm-column(6)
+			+make-sm-column-offset(3)
 
-		.textos
-				+make-sm-column(8)
-				+make-sm-column-offset(2)
-				text-align: center
-				margin-top: 50px
-				clear: both
-				+font-size(30px)
-				+breakpoint($celular)
-						+make-sm-column(6)
-						+make-sm-column-offset(3)
-
+		.btn
+			display: table
+			margin: 30px auto
