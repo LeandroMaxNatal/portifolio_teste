@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  font-size: 15px; }
+
+header {
+  background: url("../imgs/bg-slide-initial-page.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 348px; }
+
+.container {
+  width: 1230px;
+  margin: 0 auto; }
+
+#logo-top {
+  margin-top: 25px;
+  height: 85px; }
+
+nav {
+  float: right; }
+
+ul {
+  margin-top: 75px; }
+  ul li {
+    display: inline-block;
+    margin-right: 15px; }
+    ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.cover {
+  text-align: center; }
+
+h1 {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  font-size: 40px; }
+
+.cover h1 span {
+  font-weight: lighter; }
+
+.gradiente {
+  background-color: gradient(); }

@@ -1,0 +1,92 @@
+header
+	+clearfix
+	min-height: 425px
+	position: relative
+
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		bottom: 0
+		width: 100%
+		height: 45px
+		+gradient(90deg, $verde, $azul)
+	
+	background:
+		image: url('../imgs/bg-slide-initial-page.jpg')
+		position: top center
+		color: $preto
+		size: cover
+		repeat: no-repeat
+		// attachment: fixed
+	.logo,
+	.links
+		margin-top: 30px
+	
+	.logo
+		float: left
+		img
+			width: 50px
+	
+	.links
+		float: right
+		line-height: 30px
+		
+		nav,
+		.social
+			display: inline-block
+		
+		ul
+			li
+				margin: 0 10px 0 0
+		
+		nav
+			+breakpoint($tablet)
+				display: none
+
+			+breakpoint($celular)
+				display: none
+
+			ul
+				li
+					display: inline-block
+					
+					a
+						color: $branco
+						text-transform: uppercase
+
+		.social
+			li
+				display: inline-block
+				
+				a
+					border: 1px solid $branco
+						radius: 20px
+					color: $branco
+					display: block
+					width: 35px
+					height: 35px
+					padding: 5px
+					line-height: 24px
+					text-align: center
+					
+	
+	h1
+		clear: both
+		margin: 160px auto 30px auto !important
+		
+		border: 3px solid $branco
+		padding: 15px 10px
+		display: table
+		+breakpoint($celular)
+			+font-size(45px)
+	
+		span
+			font-weight: $light
+
+	h1,
+	p
+		color: $branco
+		text-transform: uppercase
+		text-align: center
+
